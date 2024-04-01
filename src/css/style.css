@@ -32,6 +32,8 @@
 
 .relative{
     background-color: aquamarine;
+    position: relative; /* Relativo a su posición inicial, lo saca del flujo normal, según top - left- right - bottom */
+    left: -20px;
 }
 
 .absolute{
