@@ -6,3 +6,45 @@
     box-sizing: border-box;
 }
 
+/* Estilos contenedor */
+
+.contenedor{
+    border: 1px solid red;
+    height: 900px;
+    margin: 40px;
+}
+
+/* Estilos para los articles */
+
+.position{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static{
+    background-color: black;
+    color: white;
+    position: static; /* Por defecto, cuando creamos elementos position es static */
+}
+
+.relative{
+    background-color: aquamarine;
+}
+
+.absolute{
+    background-color: Teal;
+    color: white;
+}
+
+.fixed{
+    background-color: green;
+    color: white;
+}
+
+.sticky{
+    background-color: Navy;
+    color: antiquewhite;
+}
