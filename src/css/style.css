@@ -32,21 +32,28 @@
 
 .relative{
     background-color: aquamarine;
-    position: relative; /* Relativo a su posición inicial, lo saca del flujo normal, según top - left- right - bottom */
+    position: relative; /* Relativo a su posición inicial, lo saca del flujo normal, según top - left- right - bottom, su espacio inicial se respeta */
     left: -20px;
 }
 
 .absolute{
     background-color: Teal;
     color: white;
+    position: absolute; /* Se basa en la pantalla total, sale del flujo normal, a menos que su padre sea absolute o relative, su espacio inicial se llena con el siguiente elemento */
+    right: 0;
 }
 
 .fixed{
     background-color: green;
     color: white;
+    position: fixed; /* Se mantiene donde se ponga, sin importar el scroll, su espacio inicial se llena */
+    right: 0;
+    bottom: 0;
 }
 
 .sticky{
     background-color: Navy;
     color: antiquewhite;
+    position: sticky; /* Combina características de position: relative y position: fixed. Se comporta como relative hasta que alcanza una posición específica en la ventana del navegador (o su contenedor), necesita top y bottom para saber desde donde se "pegará".*/
+    top: 10px;
 }
